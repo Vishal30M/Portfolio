@@ -56,11 +56,10 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello-Microverse <a name="about-project"></a>
+# 📖 Portfolio-Website <a name="about-project"></a>
 
 > 
-**Hello-Microverse** is my first project in microverse. It's a hello world project requiers no complex coding.
-
+**Portfolio-Website** In this project, I set up my portfolio repository. My goal here was to set up and customize my portfolio for mobile version.
 ## 🛠 Built With <a name="built-with"></a>
 HTML
 CSS
@@ -104,8 +103,12 @@ Git, A text editor
 
 ### Setup
 
-Clone this repository to your desired folder:
-git clone git@github.com/Vishal30M/Hello-Microverse-.git
+Clone this repository to your desired folder
+
+Go to the repository page.
+Press the "Code" button and copy the link.
+Clone it using git command git clone <link>.:
+git clone git@github.com/Vishal30M/Portfolio.git
 <!--
 Example commands:
 
