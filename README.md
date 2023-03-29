@@ -104,10 +104,14 @@ Git, A text editor
 ### Setup
 
 Clone this repository to your desired folder
-
-Go to the repository page.
-Press the "Code" button and copy the link.
-Clone it using git command git clone <link>.:
+<ol>
+<li>Go to the repository page.
+</li>
+<li>Press the "Code" button and copy the link.
+</li>
+<li>Clone it using git command git clone <link>.
+</li>
+</ol>
 git clone git@github.com/Vishal30M/Portfolio.git
 <!--
 Example commands:
@@ -160,8 +164,16 @@ No deployment yet
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
+<ul>
+<li>Understand how to parse a Figma design to create a UI.</li>
+<li>Flexbox to place elements in the page.
+</li>
+<li>Build a personal portfolio site.
+</li>
+<li>Use images and backgrounds to enhance the look of the website.
+</li>
+</ul>
 
->It's a simple Hello World project, It dosen't requiers any advanced feature.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
