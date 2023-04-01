@@ -110,9 +110,8 @@ header {
 }
 
 .card {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: auto;
+  display: flex;
+    flex-direction: column;
   border-radius: 16px;
   border: solid #e5e5e5 1px;
   background-color: #fff;
