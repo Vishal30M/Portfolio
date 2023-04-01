@@ -110,8 +110,9 @@ header {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
   border-radius: 16px;
   border: solid #e5e5e5 1px;
   background-color: #fff;
@@ -214,10 +215,12 @@ h2 {
 
 .project {
   margin-top: 114px;
-  gap: 50px;
   margin-left: 10px;
   margin-right: 10px;
   display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
 }
 
 .about_section {
@@ -326,8 +329,7 @@ button:disabled {
 
 .icon-languages {
   padding-left: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 .frame {
