@@ -195,6 +195,7 @@ h2 {
   margin-top: 12px;
   padding-left: 0;
   gap: 12px;
+  float: left;
 }
 
 .language li {
