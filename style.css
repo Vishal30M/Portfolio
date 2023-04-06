@@ -387,6 +387,7 @@ button:disabled {
   padding: 0 0 52px 0;
   text-align: center;
   margin-left: 0;
+  margin-bottom: 0;
 }
 
 input[type="text"],
