@@ -350,3 +350,63 @@ button:disabled {
   width: 327px;
   background: #dfe1e6;
 }
+
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6070ff;
+  width: 100%;
+  border-radius: 70px 0 0 0;
+  background-image: url(images/contact\ form\ shapes-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  margin-top: 178px;
+  height: auto;
+}
+
+.contatct-head {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  padding-top: 90px;
+  margin-top: 0;
+  margin-bottom: 0%;
+}
+
+.contact-desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ebebff;
+  padding: 0 0 52px 0;
+  text-align: center;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+form {
+  padding-right: 18px;
+}
+
+.submit {
+  padding: 12px 18px;
+  margin-left: 0;
+}
