@@ -359,11 +359,12 @@ button:disabled {
   background-color: #6070ff;
   width: 100%;
   border-radius: 70px 0 0 0;
-  background-image: url(images/contact\ form\ shapes-mobile.png);
+  background-image: url(images/contact\ form\ shapes-mobile@2x.png);
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: cover;
+  background-size: contain;
   margin-top: 178px;
+  height: auto;
 }
 
 .contatct-head {
@@ -371,17 +372,21 @@ button:disabled {
   font-weight: 700;
   font-size: 40px;
   color: #fff;
-  padding-top: 130px;
-  padding-bottom: 12px;
+  padding-top: 90px;
+  margin-top: 0;
   margin-bottom: 0%;
 }
 
 .contact-desc {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
   font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
   color: #ebebff;
-  padding: 0 0 42px 24px;
+  padding: 0 0 52px 0;
+  text-align: center;
+  margin-left: 0;
 }
 
 input[type="text"],
@@ -392,10 +397,15 @@ textarea {
   margin-bottom: 20px;
   padding: 10px;
   font-size: 16px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
 }
 
 form {
   padding-right: 18px;
+}
+
+.submit {
+  padding: 12px 18px;
+  margin-left: 0;
 }
