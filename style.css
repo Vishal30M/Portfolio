@@ -22,8 +22,6 @@ header {
   transition: transform 0.3s ease-in-out;
 }
 
-
-
 .logo:hover {
   animation: shake 0.5s ease-in-out;
   transform: scale(1.1);
@@ -31,10 +29,10 @@ header {
 
 @keyframes shake {
   0% { transform: rotate(0); }
-    25% { transform: rotate(-5deg); }
-    50% { transform: rotate(0); }
-    75% { transform: rotate(5deg); }
-    100% { transform: rotate(0); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(0); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0); }
 }
 
 .introduction {
@@ -96,29 +94,6 @@ header {
   transition: transform 0.3s ease-in-out;
 }
 
-.social-link li:hover {
-  transform: scale(1.2);
-}
-
-.social-link li a i {
-  color: #333;
-  transition: color 0.3s ease-in-out;
-}
-
-.social-link li:hover a i {
-  color: #7f8cff;
-}
-
-.social-link li a i:hover {
-  animation: spin 1s ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0); }
-  100% { transform: rotate(360deg); }
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -160,16 +135,15 @@ header {
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 40px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.2);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   position: relative;
- 
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.4);
 }
 
 .snapshot {
@@ -259,6 +233,45 @@ h2 {
   padding-right: 10px;
   background: #ebebff;
   border-radius: 8px;
+}
+
+.icon-languages li {
+  display: flex;
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  margin: 16px;
+  gap: 16px;
+  padding: 12px;
+}
+
+.social-link li:hover {
+  transform: scale(1.2);
+}
+
+.social-link li a i {
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-link li:hover a i {
+  color: #6070ff;
+}
+
+.social-link li a i:hover {
+  animation: spin 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
 }
 
 .Projects {
@@ -356,22 +369,6 @@ button:disabled {
 .fa-angle-right {
   padding-right: 64px;
   color: #505f79;
-}
-
-.icon-languages li {
-  display: flex;
-  align-items: center;
-  background: #f7f7f9;
-  border-radius: 8px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-  margin: 16px;
-  gap: 16px;
-  padding: 12px;
 }
 
 .icon-languages {
