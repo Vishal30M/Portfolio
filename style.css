@@ -19,6 +19,22 @@ header {
   color: #6070ff;
   padding-right: 200px;
   margin-top: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.logo:hover {
+  animation: shake 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+@keyframes shake {
+  0% { transform: rotate(0); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(0); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0); }
 }
 
 .introduction {
@@ -77,6 +93,30 @@ header {
   flex-direction: row;
   padding-left: 24px;
   gap: 0 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-link li:hover {
+  transform: scale(1.2);
+}
+
+.social-link li a i {
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-link li:hover a i {
+  color: #7f8cff;
+}
+
+.social-link li a i:hover {
+  animation: spin 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
 }
 
 .content {
@@ -120,6 +160,16 @@ header {
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+ 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.4);
 }
 
 .snapshot {
@@ -235,6 +285,7 @@ button {
   margin-left: 16px;
   margin-bottom: 30px;
   background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
