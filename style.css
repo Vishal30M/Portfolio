@@ -251,6 +251,25 @@ h2 {
   padding: 12px;
 }
 
+.social-link li a i {
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+.social-link li:hover a i {
+  color: #6070FF;
+}
+.social-link li a i:hover {
+  animation: spin 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+.social-link li:hover {
+  transform: scale(1.2);
+}
 
 .Projects {
   margin-top: 114px;
