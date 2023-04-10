@@ -261,7 +261,7 @@ h2 {
 }
 
 .social-link li:hover a i {
-  color: #ff00ff;
+  color: #f0f;
 }
 
 .social-link li a i:hover {
@@ -283,7 +283,7 @@ h2 {
 }
 
 .about_section {
-  background: #FFEAF6 0% 0% no-repeat padding-box;
+  background: #ffeaf6 0% 0% no-repeat padding-box;
   border-top-right-radius: 70px;
   padding-top: 8%;
   margin-top: 12px;
@@ -645,8 +645,7 @@ form {
     border-top-right-radius: 70px;
     width: 100%;
     height: 100%;
-    border-radius: 40%;
-    background: #FFEAF6 0% 0% no-repeat padding-box;
+    background: #ffeaf6 0% 0% no-repeat padding-box;
     opacity: 1;
   }
 
