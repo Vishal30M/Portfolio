@@ -81,9 +81,7 @@ CSS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->It's in progress.
-
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://vishal30m.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
