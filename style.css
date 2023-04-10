@@ -85,15 +85,6 @@ header {
   margin-bottom: 0;
 }
 
-.social-link {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding-left: 24px;
-  gap: 0 12px;
-  transition: transform 0.3s ease-in-out;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -251,6 +242,37 @@ h2 {
   padding: 12px;
 }
 
+.social-link {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 24px;
+  gap: 0 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-link li:hover {
+  transform: scale(1.2);
+}
+
+.social-link li a i {
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-link li:hover a i {
+  color: #ff00ff;
+}
+
+.social-link li a i:hover {
+  animation: spin 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
 
 .Projects {
   margin-top: 114px;
@@ -261,7 +283,7 @@ h2 {
 }
 
 .about_section {
-  background-color: #fff;
+  background: #FFEAF6 0% 0% no-repeat padding-box;
   border-top-right-radius: 70px;
   padding-top: 8%;
   margin-top: 12px;
@@ -622,7 +644,10 @@ form {
     grid-template-columns: 40% 60%;
     border-top-right-radius: 70px;
     width: 100%;
-    height: auto;
+    height: 100%;
+    border-radius: 40%;
+    background: #FFEAF6 0% 0% no-repeat padding-box;
+    opacity: 1;
   }
 
   h4 {
