@@ -1,3 +1,4 @@
+
 const burger = document.querySelector('.burger');
 const menuMobile = document.querySelector('.menu-mobile');
 const closeIcon = document.querySelector('.close-icon');
@@ -9,10 +10,4 @@ burger.addEventListener('click', () => {
 closeIcon.addEventListener('click', () => {
   menuMobile.classList.remove('active');
 });
-
-
-
-
-
-
 
