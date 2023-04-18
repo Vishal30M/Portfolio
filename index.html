@@ -17,14 +17,33 @@
             <. / Vi$hal>
         </a>
 
-        <nav class="burger">
+        <div class="burger">
             <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-        </nav>
+        </div>
+        <nav class="menu-mobile">
+            <ul class="nav-links-mobile">
+              <li>
+                <a href="#portfolio" class="a-links">Portfolio</a>
+              </li>
+              <li>
+                <a href="#about__me" class="a-links">About</a>
+              </li>
+              <li>
+                <a href="#contact"class="a-links">Contact</a>
+              </li>
+              <li>
+                <div class="close-icon">
+                  <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          
         <nav class="menu">
             <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Projects">Portfolio</a></li>
+                <li><a href="#about_section">About</a></li>
+                <li><a href="#contact-me">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -63,7 +82,7 @@
 
     </section>
 
-    <section class="Projects">
+    <section id="Projects">
         <div class="card">
             <img class="snapshot" src="images/SS0.png" alt="snapshot">
             <div class="right">
@@ -173,7 +192,7 @@
         </div>
     </section>
     <section class="duo">
-        <section class="about_section">
+        <section id="about_section">
             <div class="about_me_title">
                 <h2 class="abt-heading">About <br> Myself</h2>
 
@@ -276,7 +295,8 @@
             </form>
         </section>
     </section>
-
+    <script src="script.js"></script>
+</body>
 </body>
 
 </html>
