@@ -92,6 +92,7 @@ header {
   padding-left: 24px;
   gap: 0 12px;
   transition: transform 0.3s ease-in-out;
+  margin-bottom: 200px;
 }
 
 .content {
@@ -105,7 +106,7 @@ header {
   background-size: cover;
   margin-top: 0;
   width: 100%;
-  height: 604px;
+  
   border-bottom-left-radius: 60px;
   background-color: #fff;
 }
@@ -123,6 +124,8 @@ header {
 .fa-angellist {
   color: #505f79;
 }
+
+
 
 .card {
   display: flex;
@@ -271,7 +274,7 @@ h2 {
   transform: scale(1.2);
 }
 
-.Projects {
+#Projects {
   margin-top: 114px;
   margin-right: 10px;
   display: grid;
@@ -279,7 +282,7 @@ h2 {
   gap: 10px;
 }
 
-.about_section {
+#about_section {
   background-color: #fff;
   border-top-right-radius: 70px;
   padding-top: 8%;
@@ -463,6 +466,51 @@ form {
   display: none;
 }
 
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#6070ff ;
+  z-index:1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-mobile.active {
+  opacity: 0.9;
+  visibility: visible;
+}
+
+.nav-links-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  height: 100%;
+  margin-top: 160px;
+}
+
+.nav-links-mobile li {
+  
+  list-style: none;
+
+}
+
+.a-links {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Burger and close icon styles */
+
+
 @media screen and (min-width: 768px) {
   header {
     display: flex;
@@ -564,7 +612,7 @@ form {
     left: 16%;
   }
 
-  .Projects {
+  #Projects {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1fr);
@@ -636,7 +684,7 @@ form {
     margin-top: 20px;
   }
 
-  .about_section {
+  #about_section {
     display: grid;
     grid-template-columns: 40% 60%;
     border-top-right-radius: 70px;
