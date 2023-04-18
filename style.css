@@ -508,6 +508,24 @@ form {
   text-decoration: none;
 }
 
+/* Burger and close icon styles */
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+}
 
 @media screen and (min-width: 768px) {
   header {
