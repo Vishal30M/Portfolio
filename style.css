@@ -279,74 +279,7 @@ h2 {
   gap: 12px;
 }
 
-<<<<<<< HEAD
 #Projects {
-=======
-.language li {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: #6070ff;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background: #ebebff;
-  border-radius: 8px;
-}
-
-.icon-languages li {
-  display: flex;
-  align-items: center;
-  background: #f7f7f9;
-  border-radius: 8px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-  margin: 16px;
-  gap: 16px;
-  padding: 12px;
-}
-
-.social-link {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding-left: 24px;
-  gap: 0 12px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.social-link li:hover {
-  transform: scale(1.2);
-}
-
-.social-link li a i {
-  color: #333;
-  transition: color 0.3s ease-in-out;
-}
-
-.social-link li:hover a i {
-  color: #6070ff;
-}
-
-.social-link li a i:hover {
-  animation: spin 1s ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0); }
-  100% { transform: rotate(360deg); }
-}
-
-.Projects {
->>>>>>> cb888e6646341f837b04c143975d2c2852c99cce
   margin-top: 114px;
   margin-right: 10px;
   display: grid;
@@ -354,8 +287,8 @@ h2 {
   gap: 10px;
 }
 
-.about_section {
-  background: #fff;
+#about_section {
+  background-color: #fff;
   border-top-right-radius: 70px;
   padding-top: 8%;
   margin-top: 12px;
@@ -771,9 +704,7 @@ form {
     grid-template-columns: 40% 60%;
     border-top-right-radius: 70px;
     width: 100%;
-    height: 100%;
-    background: #fff;
-    opacity: 1;
+    height: auto;
   }
 
   h4 {
