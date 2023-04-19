@@ -11,3 +11,8 @@ closeIcon.addEventListener('click', () => {
   menuMobile.classList.remove('active');
 });
 
+Window.addEventListener('resize',()=>{
+  if(window.innerWidth > 768){
+    menuMobile.classList.remove('active');
+  }
+})
