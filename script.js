@@ -1,4 +1,3 @@
-
 const burger = document.querySelector('.burger');
 const menuMobile = document.querySelector('.menu-mobile');
 const closeIcon = document.querySelector('.close-icon');
@@ -11,8 +10,8 @@ closeIcon.addEventListener('click', () => {
   menuMobile.classList.remove('active');
 });
 
-Window.addEventListener('resize',()=>{
-  if(window.innerWidth > 768){
+Window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
     menuMobile.classList.remove('active');
   }
-})
+});
