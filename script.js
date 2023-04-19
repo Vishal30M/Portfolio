@@ -22,5 +22,3 @@ window.addEventListener('resize', () => {
     menuMobile.classList.remove('active');
   }
 });
-
-
