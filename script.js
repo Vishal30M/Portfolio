@@ -10,116 +10,288 @@ closeIcon.addEventListener('click', () => {
   menuMobile.classList.remove('active');
 });
 
-Window.addEventListener('resize', () => {
+window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
     menuMobile.classList.remove('active');
   }
 });
 
-const projects = [
+// Popup window
+
+const projectCard = [
   {
+    id: '0',
+    image: './images/SS0.png',
     title: 'Tonic',
-    snapshot: 'images/SS0.png',
-    mainDetail: 'CANOPY',
-    secondaryDetail: ['Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['HTML', 'CSS', 'Javascript']
+    creatorName: 'Canopy',
+    creatorPos: 'Back End Dev',
+    creatorYear: '2015',
+    descriptionShort:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    descriptionLong1:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    descriptionLong2:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
+    language1: 'HTML',
+    language2: 'Ruby on rails',
+    language3: 'CSS',
+    language4: 'Javascript',
+    language5: 'Bootstrap',
+    buttonOpen: 'See project',
+    buttonLive: 'See live',
+    liveLink: 'https://vishal30m.github.io/Portfolio/',
+    buttonSource: 'See source',
+    sourceLink:
+      'https://github.com/Vishal30M/Portfolio',
   },
+
   {
-    title: 'Tonic',
-    snapshot: 'images/SS2.png',
-    mainDetail: 'CANOPY',
-    secondaryDetail: ['Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['HTML', 'CSS', 'Javascript']
-  },
-  {
-    title: 'Tonic',
-    snapshot: 'images/SS1.png',
-    mainDetail: 'CANOPY',
-    secondaryDetail: ['Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['HTML', 'CSS', 'Javascript']
-  },
-  {
+    id: '1',
+    image: './images/SS1.png',
     title: 'Multi-Post Stories',
-    snapshot: 'images/SS4.png',
-    mainDetail: 'CANOPY',
-    secondaryDetail: ['Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['HTML', 'CSS', 'Javascript']
-  }
+    creatorName: 'Facebook',
+    creatorPos: 'Full Stack Dev',
+    creatorYear: '2015',
+    descriptionShort:
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    descriptionLong1:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    descriptionLong2:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
+    language1: 'HTML',
+    language2: 'Ruby on rails',
+    language3: 'CSS',
+    language4: 'Javascript',
+    language5: 'Bootstrap',
+    buttonOpen: 'See project',
+    buttonLive: 'See live',
+    liveLink: 'https://vishal30m.github.io/Portfolio/',
+    buttonSource: 'See source',
+    sourceLink:
+      'https://github.com/Vishal30M/Portfolio',
+  },
+
+  {
+    id: '2',
+    image: './images/SS2.png',
+    title: 'Facebook 360',
+    creatorName: 'Facebook',
+    creatorPos: 'Full Stack Dev',
+    creatorYear: '2015',
+    descriptionShort:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    descriptionLong1:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    descriptionLong2:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
+    language1: 'HTML',
+    language2: 'Ruby on rails',
+    language3: 'CSS',
+    language4: 'Javascript',
+    language5: 'Bootstrap',
+    buttonOpen: 'See project',
+    buttonLive: 'See live',
+    liveLink: 'https://vishal30m.github.io/Portfolio/',
+    buttonSource: 'See source',
+    sourceLink:
+      'https://github.com/Vishal30M/Portfolio',
+  },
+
+  {
+    id: '3',
+    image: './images/SS4.png',
+    title: 'Uber Navigation',
+    creatorName: 'Uber',
+    creatorPos: 'Lead Developer',
+    creatorYear: '2018',
+    descriptionShort:
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    descriptionLong1:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    descriptionLong2:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
+    language1: 'HTML',
+    language2: 'Ruby on rails',
+    language3: 'CSS',
+    language4: 'Javascript',
+    language5: 'Bootstrap',
+    buttonOpen: 'See project',
+    buttonLive: 'See live',
+    liveLink: 'https://vishal30m.github.io/Portfolio/',
+    buttonSource: 'See source',
+    sourceLink:
+      'https://github.com/Vishal30M/Portfolio',
+  },
 ];
 
-const projectsSection = document.createElement('section');
-projectsSection.id = 'Projects';
+const projectContainer = document.querySelector('.work');
 
-for (const project of projects) {
-  const card = document.createElement('div');
-  card.classList.add('card');
-  if (projects.indexOf(project) % 2 !== 0) {
-    card.classList.add('reverse');
-  }
+const createProjectCards = () => {
+  projectCard.map((projectInfo) => {
+    const createProject = document.createElement('article');
+    createProject.classList.add('project');
 
-  const snapshot = document.createElement('img');
-  snapshot.classList.add('snapshot');
-  snapshot.src = project.snapshot;
-  snapshot.alt = 'snapshot';
-  card.appendChild(snapshot);
+    if (projectInfo.id % 2 === 1) {
+      createProject.classList.add('row-reverse');
+    }
 
-  const right = document.createElement('div');
-  right.classList.add('right');
-  card.appendChild(right);
+    createProject.innerHTML = `
+      <img 
+        src="./images/work-${projectInfo.id}.png" 
+        alt="Project Preview"
+        class="project__image"
+      >
+      <div class="project__details">
+        <h3 class="project__title">
+          ${projectInfo.title}
+        </h3>
+        <div class="project-creator">
+          <h4 class="project-creator__name">
+            ${projectInfo.creatorName}
+          </h4>
+          <h4 class="project-creator__details">
+            <span class="circle">●</span>
+            
+            ${projectInfo.creatorPos}
+          </h4>
+          <h4 class="project-creator__details">
+            <span class="circle">●</span>
+            ${projectInfo.creatorYear}
+          </h4>
+        </div>
+        <p class="project__description">
+          ${projectInfo.descriptionShort}
+        </p>
+        <ul class="project__languages">
+          <li class="project__language__item">${projectInfo.language1}</li>
+          <li class="project__language__item">${projectInfo.language2}</li>
+          <li class="project__language__item">${projectInfo.language3}</li>
+          <li class="project__language__item">${projectInfo.language4}</li>
+        </ul>
+        <button type="button" class="project__button button" id='card-${projectInfo.id}'>
+          ${projectInfo.buttonOpen}
+        </button>
+      </div>
+    `;
 
-  const cardText = document.createElement('div');
-  cardText.classList.add('card-text');
-  right.appendChild(cardText);
+    return projectContainer.appendChild(createProject);
+  });
+};
 
-  const title = document.createElement('h2');
-  title.textContent = project.title;
-  cardText.appendChild(title);
+createProjectCards();
 
-  const detailList = document.createElement('ul');
-  detailList.classList.add('detail');
-  cardText.appendChild(detailList);
+// Open modal
 
-  const mainDetail = document.createElement('li');
-  mainDetail.classList.add('main');
-  mainDetail.textContent = project.mainDetail;
-  detailList.appendChild(mainDetail);
+const modalContainer = document.querySelector('.modal');
 
-  for (const secondaryDetail of project.secondaryDetail) {
-    const secondary = document.createElement('li');
-    secondary.classList.add('main2');
-    secondary.textContent = secondaryDetail;
-    detailList.appendChild(secondary);
-  }
+const showModal = (event) => {
+  const clickedButton = event.target.id.slice(5);
 
-  const paragraph = document.createElement('div');
-  paragraph.classList.add('paragraph');
-  right.appendChild(paragraph);
+  modalContainer.classList.remove('hidden');
 
-  const description = document.createElement('p');
-  description.classList.add('short.descr');
-  description.textContent = project.description;
-  paragraph.appendChild(description);
+  const createModal = () => {
+    const findCardInfo = projectCard.find((card) => card.id === clickedButton);
 
-  const languageList = document.createElement('ul');
-  languageList.classList.add('language');
-  right.appendChild(languageList);
+    if (!findCardInfo) {
+      return;
+    }
 
-  for (const language of project.languages) {
-    const languageItem = document.createElement('li');
-    languageItem.textContent = language;
-    languageList.appendChild(languageItem);
-  }
+    const createModalCard = document.createElement('article');
+    createModalCard.classList.add('modal-card');
 
-  const seeProjectButton = document.createElement('button');
-  seeProjectButton.type = 'button';
-  seeProjectButton.textContent = 'See Project';
-  right.appendChild(seeProjectButton);
+    createModalCard.innerHTML = `
+      <div class="project__details modal__details">
+        <div class="modal-top">
+          <h3 class="project__title">
+            ${findCardInfo.title}
+          </h3>
+          <button type="button" class="modal__closer"></button>
+        </div>
+        <div class="project-creator">
+          <h4 class="project-creator__name">
+            ${findCardInfo.creatorName}
+          </h4>
+          <h4 class="project-creator__details">
+            <span class="circle">●</span>
+            
+            ${findCardInfo.creatorPos}
+          </h4>
+          <h4 class="project-creator__details">
+            <span class="circle">●</span>
+            ${findCardInfo.creatorYear}
+          </h4>
+        </div>
+        <div class="modal__image-container">
+          <img 
+            src="./images/work-${findCardInfo.id}.png" 
+            alt="Project Preview"
+            class="project__image modal__image"
+          >
+        </div>
+        <div class="modal__desktop-wrapper">
+          <div class="modal__description">
+            <p class="project__description">
+              ${findCardInfo.descriptionLong1}
+            </p>
+            <p class="project__description project__description2">
+              ${findCardInfo.descriptionLong2}
+            </p>
+          </div>
+          <div class="modal__right-column">
+            <ul class="project__languages modal__languages">
+              <li class="project__language__item">${findCardInfo.language1}</li>
+              <li class="project__language__item">${findCardInfo.language2}</li>
+              <li class="project__language__item">${findCardInfo.language3}</li>
+              <li class="project__language__item">${findCardInfo.language4}</li>
+              <li class="project__language__item">${findCardInfo.language5}</li>
+            </ul>
+            <hr>
+            <div class="modal-bottom">
+              <a href="${findCardInfo.liveLink}" class="modal__button button">
+                ${findCardInfo.buttonLive}
+                <img 
+                  src="./images/live.svg" 
+                  alt="Live view"
+                  class="button__image"
+                >
+              </a>
+          
+              <a href="${findCardInfo.sourceLink}" class="modal__button button">
+                ${findCardInfo.buttonSource}
+                <img 
+                  src="./images/source.svg" 
+                  alt="Source code"
+                  class="button__image"
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
 
-  projectsSection.appendChild(card);
-}
+    const modalIsShown = modalContainer.querySelector('.modal-card');
 
-document.body.appendChild(projectsSection);
+    if (modalIsShown) {
+      modalContainer.removeChild(modalIsShown);
+    }
+
+    modalContainer.appendChild(createModalCard);
+
+    // Close Modal
+
+    const modalCloser = document.querySelector('.modal__closer');
+
+    const closeModal = () => {
+      modalContainer.classList.add('hidden');
+    };
+
+    modalCloser.addEventListener('click', closeModal);
+  };
+
+  createModal();
+};
+
+const buttons = document.querySelectorAll('.project__button');
+
+buttons.forEach((button) => button.addEventListener('click', showModal));
