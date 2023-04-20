@@ -11,13 +11,11 @@ closeIcon.addEventListener('click', () => {
   menuMobile.classList.remove('active');
 });
 
-
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', () => {
     menuMobile.classList.remove('active');
   });
 });
-
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
@@ -304,4 +302,3 @@ const showModal = (event) => {
 const buttons = document.querySelectorAll('.project__button');
 
 buttons.forEach((button) => button.addEventListener('click', showModal));
-
