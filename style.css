@@ -578,7 +578,8 @@ form {
 
 .a-links {
   display: block;
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: bold;
   text-align: center;
   color: #fff;
   text-decoration: none;
