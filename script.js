@@ -303,7 +303,7 @@ const buttons = document.querySelectorAll('.project__button');
 
 buttons.forEach((button) => button.addEventListener('click', showModal));
 
-//local-storage//
+// local-storage//
 // Select all the form elements
 const fullnameInput = document.getElementById('fullname');
 const emailInput = document.getElementById('email');
@@ -320,25 +320,25 @@ if (savedFormData) {
   messageInput.value = savedFormData.message;
 }
 
-// Save form data to local storage when the user types something
-fullnameInput.addEventListener('input', saveFormData);
-emailInput.addEventListener('input', saveFormData);
-messageInput.addEventListener('input', saveFormData);
-
 function saveFormData() {
   // Create a single object with all the form data
   const formData = {
     fullname: fullnameInput.value,
     email: emailInput.value,
-    message: messageInput.value
+    message: messageInput.value,
   };
 
   // Save the form data to local storage as a JSON string
   localStorage.setItem('formData', JSON.stringify(formData));
 }
 
+// Save form data to local storage when the user types something
+fullnameInput.addEventListener('input', saveFormData);
+emailInput.addEventListener('input', saveFormData);
+messageInput.addEventListener('input', saveFormData);
+
 // Validate the email field and submit the form
-submitButton.addEventListener('click', function (event) {
+submitButton.addEventListener('click', (event) => {
   if (emailInput.value !== emailInput.value.toLowerCase()) {
     event.preventDefault();
     const errorText = document.createElement('p');
