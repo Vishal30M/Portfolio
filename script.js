@@ -302,3 +302,51 @@ const showModal = (event) => {
 const buttons = document.querySelectorAll('.project__button');
 
 buttons.forEach((button) => button.addEventListener('click', showModal));
+
+//local-storage//
+// Select all the form elements
+const fullnameInput = document.getElementById('fullname');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('messege');
+const submitButton = document.querySelector('.submit');
+
+// Load saved form data from local storage
+const savedFormData = JSON.parse(localStorage.getItem('formData'));
+
+if (savedFormData) {
+  // If saved form data exists, prefill the form fields
+  fullnameInput.value = savedFormData.fullname;
+  emailInput.value = savedFormData.email;
+  messageInput.value = savedFormData.message;
+}
+
+// Save form data to local storage when the user types something
+fullnameInput.addEventListener('input', saveFormData);
+emailInput.addEventListener('input', saveFormData);
+messageInput.addEventListener('input', saveFormData);
+
+function saveFormData() {
+  // Create a single object with all the form data
+  const formData = {
+    fullname: fullnameInput.value,
+    email: emailInput.value,
+    message: messageInput.value
+  };
+
+  // Save the form data to local storage as a JSON string
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+// Validate the email field and submit the form
+submitButton.addEventListener('click', function (event) {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    event.preventDefault();
+    const errorText = document.createElement('p');
+    errorText.textContent = 'Email should be in lowercase.';
+    errorText.style.color = 'red';
+    submitButton.parentNode.insertBefore(errorText, submitButton);
+  } else {
+    // Clear the saved form data from local storage when the form is submitted successfully
+    localStorage.removeItem('formData');
+  }
+});
