@@ -338,9 +338,9 @@ emailInput.addEventListener('input', saveFormData);
 messageInput.addEventListener('input', saveFormData);
 
 // Validate the email field and submit the form
-<<<<<<< HEAD
+
 submitButton.addEventListener('click', (event) => {
-=======
+
 submitButton.addEventListener('click', function (event) {
 
 // form-validation//
@@ -351,7 +351,7 @@ const submitButton = document.querySelector('.submit');
 
 form.addEventListener('submit', (event) => {
 
->>>>>>> a2e0e9fd72404ce36db496cf8c2cfde5d1611e83
+
   if (emailInput.value !== emailInput.value.toLowerCase()) {
     event.preventDefault();
     const errorText = document.createElement('p');
